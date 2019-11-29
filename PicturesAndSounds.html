@@ -1,0 +1,38 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="PicturesAndSounds.css">
+    <script>
+        function PlaySound(clicked_id){
+            var audioId = clicked_id+"Sound";
+            var audio = document.getElementById(audioId);
+            alert(audioId);
+            alert(audio);
+            audio.play();
+        }
+
+
+    </script>
+</head>
+<body>
+<h1>Title goes here</h1>
+
+    <!-- Donkey!!! -->
+    <div>
+        <img src="donkey.jpg" />
+        <button id="Donkey" onclick="PlaySound(this.id)">Click to make sounds!</button>
+        <audio id="DonkeySound" src="DonkeySound.mp3" ></audio>
+    </div>
+
+    <!-- Chicken!!! -->
+    <div>
+        <img src="Chicken.jpg" />
+        <button id="Chicken" onclick="PlaySound(this.id)">Click to make sounds!</button>
+        <audio id="ChickenSound" src="ChickenSound.mp3" ></audio>
+    </div>
+
+    <!-- Pig!!! -->
+
+    <!-- Minion!!! -->
+
+</body>
+</html>
